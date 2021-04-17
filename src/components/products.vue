@@ -3,7 +3,7 @@
       <div class="products col-lg-12 col-sm-12 col-md-12">
       <div class="hero">
           <!-- <img src="../assets/tech.jpg" alt=""> -->
-          
+          <h2>Our product range</h2>
              <ul data-aos="slide-up" data-aos-duration="1550">
                  <li data-aos="slide-up" data-aos-duration="1150" class="productitems">1</li>
                  <li data-aos="slide-up" data-aos-duration="1350" class="productitems">w</li>
@@ -65,7 +65,7 @@ justify-content: space-evenly;
     .hero{
         display: flex;
         width: 100%;
-        flex-direction: row;
+        flex-direction: column;
         margin-top: 30px;
 
     position: relative;
