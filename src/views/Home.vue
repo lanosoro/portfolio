@@ -4,10 +4,12 @@
     <div class="home col-lg-12 col-md-12 col-sm-12  ">
     <div class="hero col-lg-4 col-md-12 col-sm-12">
       <span class="heading" >
-        <p data-aos="fade-in-up" style="display:block; color:white; font-weight:700; font-size:49px; text-align:left; margin-top:30px">
+       <transition name="fade">
+          <h1 style="display:block; color:white; font-weight:700; font-size:49px; text-align:left; margin-top:30px">
           welcome! <br>
           medilab & allied limited
-        </p>
+        </h1>
+       </transition>
         <p data-aos="slide-right" data-aos-duration="500" style="font: size 1.1em;">Medilab & Allied 
           Products K Ltd is 
           located in Nairobi, 
@@ -65,6 +67,16 @@ export default {
   width: 100vw;
   background: #90c4f9;
   z-index: 1000;
+}
+.fade-enter-from{
+  opacity: 0;
+
+}
+.fade-enter-to{
+  opacity: 1;
+}
+.fade-enter-active{
+  transition: all 6s ease;
 }
 .card-1{
   height: 500px;
