@@ -8615,12 +8615,27 @@
   dependencies:
     "figgy-pudding" "^3.5.1"
 
-"ssri@^7.0.0", "ssri@^7.1.0":
+"ssri@^7.0.0":
   "integrity" "sha512-77/WrDZUWocK0mvA5NTRQyveUf+wsrIc6vyrxpS8tVvYBcX215QbafrJR3KtkpskIzoFLqqNuuYQvxaMjXJ/0g=="
-  "resolved" "https://registry.yarnpkg.com/ssri/-/ssri-7.1.0.tgz"
+  "resolved" "https://registry.npmjs.org/ssri/-/ssri-7.1.0.tgz"
   "version" "7.1.0"
   dependencies:
     "figgy-pudding" "^3.5.1"
+    "minipass" "^3.1.1"
+
+"ssri@^7.1.0":
+  "integrity" "sha512-77/WrDZUWocK0mvA5NTRQyveUf+wsrIc6vyrxpS8tVvYBcX215QbafrJR3KtkpskIzoFLqqNuuYQvxaMjXJ/0g=="
+  "resolved" "https://registry.npmjs.org/ssri/-/ssri-7.1.0.tgz"
+  "version" "7.1.0"
+  dependencies:
+    "figgy-pudding" "^3.5.1"
+    "minipass" "^3.1.1"
+
+"ssri@^8.0.1":
+  "integrity" "sha512-97qShzy1AiyxvPNIkLWoGua7xoQzzPjQ0HAH4B0rWKo7SZ6USuPcrUiAFrws0UH8RrbWmgq3LMTObhPIHbbBeQ=="
+  "resolved" "https://registry.npmjs.org/ssri/-/ssri-8.0.1.tgz"
+  "version" "8.0.1"
+  dependencies:
     "minipass" "^3.1.1"
 
 "stable@^0.1.8":

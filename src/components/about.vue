@@ -26,14 +26,14 @@
       </div>
       
   </section>
-  <h1 style="position:relative; top:-100px;">Our customers</h1>
+  
   <section class="testimonial">
-      
+     <h1 style="position:relative; top:80px;">Our customers</h1> 
       <div class="wrapper">
-          <div class="customers" data-aos="slide-right" data-aos-duration="1500"><h3>Research Instituition</h3></div>
-          <div class="customers" data-aos="slide-right"><h3>Food processors</h3></div>
-          <div class="customers" data-aos="slide-left"><h3>Hospitals</h3></div>
-          <div class="customers" data-aos="slide-left" data-aos-duration="1500"><h3>Power plants</h3></div>
+          <div class="customers" data-aos="slide-right" data-aos-duration="1500"><h3 id="h3">Research Instituition</h3></div>
+          <div class="customers" data-aos="slide-right"><h3 id="h3">Food processors</h3></div>
+          <div class="customers" data-aos="slide-left"><h3 id="h3">Hospitals</h3></div>
+          <div class="customers" data-aos="slide-left" data-aos-duration="1500"><h3 id="h3">Power plants</h3></div>
           
       </div>
   </section>
@@ -59,7 +59,8 @@ export default {
     }
     .wrapper{
         display: flex;
-       
+        position: relative;
+        top: 100px;
         justify-content: space-around;
         list-style: none;
         max-height: 300px;
@@ -99,13 +100,23 @@ export default {
 
     
     }
+    .about-main{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-flow: column wrap;
+    }
     .about-text p{
         font-size: 1.5em;
         font-weight: 500;
         line-height: 2rem;
     }
     #about{
-        height: 100vh;
+        height: 50vh;
+        width: 90%;
+        background: rgba(255, 255, 255, 0.207);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.337);
+        margin: 40px;
     }
     span{
         font-size: 2em;
@@ -127,6 +138,12 @@ export default {
     }
    
 @media  (max-width:991px) {
+    .customers #h3{
+            font-size: 17px;
+            position: relative;
+            left: -100px;
+            display: flex;
+    }
     .about{
         position: relative;
         top: 200px;
