@@ -1,7 +1,7 @@
 <template>
-  <section id="contactus">
-      <div class="hero" data-aos="slide-up" data-aos-duration="1500">
-          <div data-aos="slide-down" data-aos-duration="1500" class="contactinfo">
+  <section id="contactus" style="font-family: 'Comfortaa', cursive;">
+      <div class="hero" data-aos="fade-up" data-aos-duration="1500">
+          <div data-aos="fade-down" data-aos-duration="1500" class="contactinfo">
               <div class="info" data-aos="ease-in-back" data-aos-delay="50" data-aos-duration="2000">
                   <h2>
                       Contact info

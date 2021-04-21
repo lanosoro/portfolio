@@ -7,33 +7,39 @@
                <span>About us</span>
                <p style="padding:20px 0px">
                     Medilab & Allied 
-            Products K Ltd is a 
-            Kenyan company, 
-            which is committed 
-            to providing Medical
-            and Research 
-            Reagents and 
-            Consumables, Water 
-            treatment chemicals, 
-            Cooling 
-            Tower/Boiler/Chiller
-            chemicals and
-            Condition Monitoring 
-            reagents/Sensors.
+                    Products K Ltd is a 
+                    Kenyan company, 
+                    which is committed 
+                    to providing Medical
+                    and Research 
+                    Reagents and 
+                    Consumables, Water 
+                    treatment chemicals, 
+                    Cooling 
+                    Tower/Boiler/Chiller
+                    chemicals and
+                    Condition Monitoring 
+                    reagents/Sensors.
                </p>
            </div>
            
       </div>
       
   </section>
-  
+   <h1 style="position:relative; top:0px;">Our customers from around East Africa</h1> 
   <section class="testimonial">
-     <h1 style="position:relative; top:80px;">Our customers</h1> 
+    
       <div class="wrapper">
-          <div class="customers" data-aos="slide-right" data-aos-duration="1500"><h3 id="h3">Research Instituition</h3></div>
-          <div class="customers" data-aos="slide-right"><h3 id="h3">Food processors</h3></div>
-          <div class="customers" data-aos="slide-left"><h3 id="h3">Hospitals</h3></div>
-          <div class="customers" data-aos="slide-left" data-aos-duration="1500"><h3 id="h3">Power plants</h3></div>
+          <div class="customers" data-aos="fade-right" data-aos-duration="1500"><img src="../assets/research.jpg" id="img"  alt="" height="80%" width="100%" style="border-radius:10px;">
+         <h4 id="h4">
+             Research Institution
+             </h4></div>
+          <div class="customers" data-aos="fade-right">
+              <img src="../assets/foodprocessor.jpg" alt=""  id="img" height="180%" width="100%" style="border-radius:10px;"><h4 id="h4">
+                  Food processors
+                  </h4></div>
+          <div class="customers" data-aos="fade-left"><h4 id="h4"><img src="../assets/Hospital.jpg" alt="" height="100%" width="100%" id="img" style="border-radius:10px;"> Hospitals</h4></div>
+          <div class="customers" data-aos="fade-left" data-aos-duration="1500"><h4 id="h4"><img src="../assets/powerplant.jpg" alt="" id="img" height="100%" width="100%" style="border-radius:10px;">Powerplants</h4></div>
           
       </div>
   </section>
@@ -47,6 +53,9 @@ export default {
 </script>
 
 <style scoped>
+    #img{
+        height: 170px;
+    }
     .testimonial{
         position: relative;
         top: -80px;
@@ -69,8 +78,8 @@ export default {
         height: 250px;
         width: 300px;
         border-radius:10px ;
-        padding: 30px 20px;
-        background: rgba(0, 0, 0, 0.083);
+        
+        background:rgb(255, 255, 255);
         box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.124);
         margin-left: 20px;
 
@@ -103,8 +112,9 @@ export default {
     .about-main{
         align-items: center;
         justify-content: center;
-        display: flex;
-        flex-flow: column wrap;
+        font-family: 'Comfortaa', cursive;
+        
+      
     }
     .about-text p{
         font-size: 1.5em;
@@ -114,8 +124,8 @@ export default {
     #about{
         height: 50vh;
         width: 90%;
-        background: rgba(255, 255, 255, 0.207);
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.337);
+        background: rgb(255, 255, 255);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0);
         margin: 40px;
     }
     span{
@@ -138,10 +148,15 @@ export default {
     }
    
 @media  (max-width:991px) {
-    .customers #h3{
+    .customers{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .customers #h4{
             font-size: 17px;
             position: relative;
-            left: -100px;
+            left: 0px;
             display: flex;
     }
     .about{
@@ -198,5 +213,8 @@ export default {
         list-style: none;
         max-height: 300px;
     }
+}
+@media  (max-width:491px) {
+
 }
 </style>

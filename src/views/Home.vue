@@ -1,5 +1,5 @@
 <template>
-<v-layout class="main">
+<v-layout class="main" style="font-family: 'Comfortaa', cursive; font-size:16px">
   <Nav/>
     <div class="home col-lg-12 col-md-12 col-sm-12  ">
     <div class="hero col-lg-4 col-md-12 col-sm-12">

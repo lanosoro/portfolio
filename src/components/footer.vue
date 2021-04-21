@@ -11,7 +11,7 @@
           Water treatment chemicals, Cooling Tower/Boiler/Chiller chemicals and
           Condition Monitoring reagents/Sensors.
         </p>
-        <ul class="sci">
+        <ul class="sci" style="position:relative; left:-38px">
           <li>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
           </li>
@@ -39,8 +39,9 @@
         </ul>
       </div>
       <div class="sec contact">
-        <h3>Contact Info</h3>
+           <h3>Contact Info</h3>
         <ul class="info">
+        
           <li>
             <span style="font-size:13px"
               ><i></i>MEDILAB AND ALLIED PRODUCTS (K) LTD,</span
@@ -48,9 +49,9 @@
           </li>
           <li>
             <span
-              ><i class="fa fa-map-marker" aria-hidden="true"></i> GENERAL
+              ><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="https://www.google.com/maps/place/Starehe+Court/@-1.2768852,36.8352839,17z/data=!3m1!4b1!4m5!3m4!1s0x182f16cdbc9fd05f:0xaa79ee45ae361e9!8m2!3d-1.2768852!4d36.8374726">GENERAL
               WARUINGE ROAD, OLD RACE COURSE, STAREHE COURT 7638 (2), P.O BOX
-              14705-00400, NAIROBI, KENYA</span
+              14705-00400, NAIROBI, KENYA</a></span
             >
           </li>
           <li>
@@ -61,8 +62,8 @@
           </li>
           <li>
             <span style="line-height:1.5em;"
-              ><i class="fa fa-envelope"></i> sales@medilaballied.com
-              info@medilaballied.com medilab.alliedproductsltd@gmail.com</span
+              ><i class="fa fa-envelope"></i> <a href="mailto:sales@medilaballied.com">sales@medilaballied.com</a>
+              <a href="mailto:info@medilaballied.com">info@medilaballied.com</a> <a href="mailto:medilab.alliedproductsltd@gmail.com">medilab.alliedproductsltd@gmail.com</a></span
             >
           </li>
         </ul>
@@ -75,6 +76,7 @@
           <a href="http://fineteklabs.com"> Fineteklabs</a>
         </span>
       </p>
+      
     </div>
   </footer>
 </template>
@@ -84,15 +86,27 @@ export default {};
 </script>
 
 <style>
+.info span a{
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+  flex-wrap: wrap;
+
+}
+.info span a:hover{
+  text-decoration: underline;
+  color: black;
+}
 footer {
   display: flex;
   justify-content: space-between;
  
   min-height: 50vh;
-  flex-direction: column;
+  flex-direction:row;
   background: #0074a5;
-  padding: 40px;
+  
   width: 100%;
+  height: auto;
   position: relative;
   flex-wrap: wrap;
 }
@@ -115,6 +129,8 @@ footer .container .sec.aboutus {
   width: 40%;
   color: white;
   word-spacing: 0.2em;
+  text-align: left;
+  flex-wrap: wrap;
 }
 .sci {
   margin-top: 20px;
@@ -189,6 +205,9 @@ footer .container .links {
   font-weight: 600;
   font-size: 19px;
 }
+.links h3{
+  text-align: left;
+}
 .links h3::before {
   content: "";
   position: absolute;
@@ -205,13 +224,20 @@ footer .container .links {
   list-style: none;
 }
 .contact .info {
-  position: relative;
+    position: relative;
+    width: 300px;
+    left: -38px;
 }
 .contact .info li {
   display: flex;
+  text-align: left;
+  flex-wrap: wrap;
   margin-bottom: 16px;
   word-spacing: 0.1em;
   padding-top: 6px;
+}
+.contact h3{
+  text-align: left;
 }
 .contact h3::before {
   content: "";
@@ -224,20 +250,29 @@ footer .container .links {
 }
 #bottomfooter {
   position: absolute;
-  left: auto;
+  left: 0;
   right: 0;
   font-size: 12px;
-  margin-top: 300px;
+  
   bottom: 0px;
   background: #90c4f9;
-
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   padding: 30px;
   color: white;
-  font-weight: 400;
-  font-size: 18px;
   justify-content: center;
   text-align: center;
+    font-size: 13px;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    position: relative;
+   
+    flex-wrap: wrap;
+}
+.sec{
+  left: 0px;
 }
 @media screen and (max-width: 991px) {
   footer {
@@ -248,6 +283,12 @@ footer .container .links {
     justify-content: center;
     position: relative;
     left: -10px;
+  }
+  .links ul{
+    text-align: left;
+    position: relative;
+    left: -37px;
+    width: 300px;
   }
   .container .sec {
     margin-right: 0;
@@ -278,12 +319,17 @@ footer .container .links {
   }
   .contact .info {
     position: relative;
-    width: 50vw;
+    width: 80vw;
+    flex-wrap: wrap;
   }
 }
 @media screen and (max-width: 600px) {
   footer .container .sec.aboutus p {
     width: 300px;
+  }
+  footer .container .sec.aboutus{
+    text-align: left;
+    justify-items: center;
   }
     #bottomfooter {
     position: absolute;

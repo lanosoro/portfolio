@@ -4,15 +4,15 @@
       <div class="hero">
           <!-- <img src="../assets/tech.jpg" alt=""> -->
           <h2>Our product range</h2>
-             <ul data-aos="slide-up" data-aos-duration="1550">
-                 <li data-aos="slide-up" data-aos-duration="1150" class="productitems">1</li>
-                 <li data-aos="slide-up" data-aos-duration="1350" class="productitems">w</li>
-                 <li data-aos="slide-up" data-aos-duration="1450" class="productitems">4</li>
-                 <li data-aos="slide-up" data-aos-duration="1550" class="productitems">5</li>
-                 <li data-aos="slide-up" data-aos-duration="1650" class="productitems">7</li>
-                 <li data-aos="slide-up" data-aos-duration="1750" class="productitems">8</li>
-                 <li data-aos="slide-up" data-aos-duration="1850" class="productitems">9</li>
-                 <li data-aos="slide-up" data-aos-duration="1950" data-aos-delay="60" class="productitems">0</li>
+             <ul data-aos="fade-up" data-aos-duration="1550">
+                 <li data-aos="fade-up" data-aos-duration="1150"  class="productitems"><img src="../assets/Medical_supplies_small.jpg" alt="" height="100%" width="100%" style="border-radius:10px;"></li>
+                 <li data-aos="fade-up" data-aos-duration="1350"  class="productitems"><img src="../assets/londro.jpg" alt="" height="100%" width="100%" style="border-radius:10px;"></li>
+                 <li data-aos="fade-up" data-aos-duration="1450"  class="productitems"><img src="../assets/Medical_supplies_small.jpg" alt="" height="100%" width="100%" style="border-radius:10px;"></li>
+                 <li data-aos="fade-up" data-aos-duration="1550"  class="productitems"><img src="../assets/Medical_supplies_small.jpg" alt="" height="100%" width="100%" style="border-radius:10px;"></li>
+                 <li data-aos="fade-up" data-aos-duration="1650"  class="productitems"><img src="../assets/Medical_supplies_small.jpg" alt="" height="100%" width="100%" style="border-radius:10px;"></li>
+                 <li data-aos="fade-up" data-aos-duration="1750"  class="productitems"><img src="../assets/Medical_supplies_small.jpg" alt="" height="100%" width="100%" style="border-radius:10px;"></li>
+                 <li data-aos="fade-up" data-aos-duration="1850"  class="productitems"><img src="../assets/Medical_supplies_small.jpg" alt="" height="100%" width="100%" style="border-radius:10px;"></li>
+                 <li data-aos="fade-up" data-aos-duration="1950"  data-aos-delay="60" class="productitems"><img src="../assets/Medical_supplies_small.jpg" alt="" height="100%" width="100%" style="border-radius:10px;"></li>
              </ul>
           </div>
       </div>
@@ -42,7 +42,7 @@ ul .productitems{
     width: 300px;
     position: relative;
     top:30px ;
-justify-content: space-evenly;
+    justify-content: space-evenly;
     height: 250px;
     margin-top: 10px;
     line-height: 150px;
@@ -51,27 +51,27 @@ justify-content: space-evenly;
     font-weight:bold
 
 }
-    .products{
+.products{
         height: 40vh;
         width: 100%;
         
     }
-    section{
-        height:100vh;
+section{
+        height:130vh;
         display: flex;
         flex-flow: row wrap;
 
          }
-    .hero{
+.hero{
         display: flex;
         width: 100%;
         flex-direction: column;
         margin-top: 30px;
 
-    position: relative;
-    left: -20px;
+        position: relative;
+        left: -20px;
     }
-    .a{
+.a{
         padding: 30px;
         width: 300px;
         height: 300px;
@@ -82,20 +82,20 @@ justify-content: space-evenly;
         margin-right: 30px;
         z-index: 100000;
     }
-    @media(max-width:991px){
-        .hero{
+@media(max-width:991px){
+    .hero{
             width: 100vw;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
-        section{
+    section{
             justify-content: center;
             height: 200vh;
         }
 
     }
-    @media (max-width:500px) {
+@media (max-width:500px) {
         section{
             height: 255vh;
         }
