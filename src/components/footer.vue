@@ -11,20 +11,7 @@
           Water treatment chemicals, Cooling Tower/Boiler/Chiller chemicals and
           Condition Monitoring reagents/Sensors.
         </p>
-        <ul class="sci" style="position:relative; left:-38px">
-          <li>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-        </ul>
+        
       </div>
       <div class="sec links">
         <h3>
@@ -49,20 +36,20 @@
           </li>
           <li>
             <span
-              ><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="https://www.google.com/maps/place/Starehe+Court/@-1.2768852,36.8352839,17z/data=!3m1!4b1!4m5!3m4!1s0x182f16cdbc9fd05f:0xaa79ee45ae361e9!8m2!3d-1.2768852!4d36.8374726">GENERAL
+              > <a href="https://www.google.com/maps/place/Starehe+Court/@-1.2768852,36.8352839,17z/data=!3m1!4b1!4m5!3m4!1s0x182f16cdbc9fd05f:0xaa79ee45ae361e9!8m2!3d-1.2768852!4d36.8374726"><i class="fa fa-map-marker" aria-hidden="true"></i> GENERAL
               WARUINGE ROAD, OLD RACE COURSE, STAREHE COURT 7638 (2), P.O BOX
               14705-00400, NAIROBI, KENYA</a></span
             >
           </li>
           <li>
             <span
-              ><i class="fa fa-phone"></i> +254 721 811 499, +254 734 768 110,
+              ><i class="fa fa-phone"></i> +254 721 811 499, ,
               +254 020 4401525, +254 774 768 110</span
             >
           </li>
           <li>
             <span style="line-height:1.5em;"
-              ><i class="fa fa-envelope"></i> <a href="mailto:sales@medilaballied.com">sales@medilaballied.com</a>
+              > <a href="mailto:sales@medilaballied.com"><i class="fa fa-envelope"></i> sales@medilaballied.com</a>
               <a href="mailto:info@medilaballied.com">info@medilaballied.com</a> <a href="mailto:medilab.alliedproductsltd@gmail.com">medilab.alliedproductsltd@gmail.com</a></span
             >
           </li>
@@ -91,7 +78,7 @@ export default {};
   color: white;
   margin: 5px;
   flex-wrap: wrap;
-
+  display: block;
 }
 .info span a:hover{
   text-decoration: underline;
@@ -122,7 +109,7 @@ footer .container {
   position: relative;
 }
 footer .container .sec {
-  margin-right: 0px;
+ 
   font-size: 14px;
 }
 footer .container .sec.aboutus {
@@ -135,9 +122,12 @@ footer .container .sec.aboutus {
 .sci {
   margin-top: 20px;
   display: flex;
+ 
 }
 .sci li {
   list-style: none;
+   position: relative;
+  left: 20px;
 }
 .sec.aboutus h3::before {
   content: "";
@@ -159,15 +149,15 @@ footer .container .sec.aboutus {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: white;
+  color: grey;
   text-decoration: none;
-  margin-right: 35px;
+  margin-right: 15px;
   transition: all 1s ease;
 }
 .sci li a:hover {
   background: white;
   color: #0074a5;
-  box-shadow:0px 10px rgba(0, 0, 0, 0.261);
+  box-shadow:0px 10px 6px rgba(0, 0, 0, 0.261);
 }
 .links li a {
   display: inline-block;
@@ -226,7 +216,7 @@ footer .container .links {
 .contact .info {
     position: relative;
     width: 300px;
-    left: -38px;
+    left: 0px;
 }
 .contact .info li {
   display: flex;
@@ -287,7 +277,7 @@ footer .container .links {
   .links ul{
     text-align: left;
     position: relative;
-    left: -37px;
+    left: 0px;
     width: 300px;
   }
   .container .sec {
@@ -330,6 +320,8 @@ footer .container .links {
   footer .container .sec.aboutus{
     text-align: left;
     justify-items: center;
+    left: 0px;
+    position: relative;
   }
     #bottomfooter {
     position: absolute;
@@ -337,7 +329,7 @@ footer .container .links {
     right: 0;
     bottom: 0px;
     background: #28b6e7;
-    width: 120vw;
+    width: 100vw;
     padding: 8px 40px;
     color: white;
     font-weight: 400;

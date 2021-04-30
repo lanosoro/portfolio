@@ -1,8 +1,10 @@
+/* eslint-disable vue/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-this-alias */
 <template>
 <v-layout class="main" style="font-family: 'Comfortaa', cursive; font-size:16px">
   <Nav/>
     <div class="home col-lg-12 col-md-12 col-sm-12  ">
-    <div class="hero col-lg-4 col-md-12 col-sm-12">
+       <div class="hero col-lg-4 col-md-12 col-sm-12">
       <span class="heading" >
        <transition name="fade">
           <h1 style="display:block; color:white; font-weight:700; font-size:49px; text-align:left; margin-top:30px">
@@ -33,10 +35,16 @@
           <!-- <div class="card-1">
         <img src="..\assets\Medical_supplies_small.jpg" alt="" class="image">
       </div> -->
-      <!-- <img src="../assets/mash.jpg" alt="" class="about_img" height="400px"> -->
+     
+    </div>
+
+    <div class="hero_img" >
+        <img data-aos="fade-up" data-aos-duration="1900" src="../assets/doc.png" alt="" class="about_img" >
+        
     </div>
 
   </div>
+
   <products/>
   <about/>
   <contacus/>
@@ -55,28 +63,37 @@ import scrollto from '@/components/scrollto';
 
 
 export default {
-  components: { products, About, Footer, Contacus,Nav,scrollto }
-
+  components: { products, About, Footer, Contacus,Nav,scrollto},
+   
 }
+
     
 </script>
 
 <style scoped>
+body{
+background-color:#2C3E50;
+}
+#slider{
+width:100%;
+}
+#hero{
+  padding: 30px;
+  width:500px ;
+  height: 100%;
+  position: relative;
+  right: 0;
+}
+
 .home{
   height: 100vh;
   width: 100vw;
   background: #90c4f9;
   z-index: 1000;
-}
-.fade-enter-from{
-  opacity: 0;
-
-}
-.fade-enter-to{
-  opacity: 1;
-}
-.fade-enter-active{
-  transition: all 6s ease;
+  display: flex;
+  gap: 10vw;
+  flex-direction: row;
+  padding: 0 150px;
 }
 .card-1{
   height: 500px;
@@ -85,19 +102,25 @@ export default {
   width: 300px;
 }
 img{
-  height: 30vh;
+  height: 80vh;
+  /* width: 100vw; */
   position: relative;
   top: 0px;
-  width: 300px;
+  width: 600px;
 }
+.main{
+  display: flex;
+  flex-direction: column;
 
+}
 .hero{
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   font-size: 300px;
+
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  padding: 30px;
 }
 .nav-link{
   font-size: 20px;
@@ -111,10 +134,45 @@ img{
 p{
   font-size: 20px;
   text-align: left;
+  flex-wrap:wrap ;
+  display: flex;
 }
+/* .heading{
+  width: 60vw;
+  background: rgba(0, 0, 0, 0.207);
+  height: 67vh;
+  padding: 10px 30px;
+  position: relative;
+  border-radius:10px ;
+  box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.481);
+} */
 @media (max-width:500px){
+  #hero{
+    display: none;
+  }
   .main{
     width:100% ;
+  }
+  .hero_img{
+    display: none;
+  }
+  .home {
+    height:100vh;
+ 
+  }
+  h1{
+    font-size: 34px !important;
+  }
+  #p{
+    font-size: 14px;
+  }
+  .nav-link{
+    width: 50%;
+    font-size:14px;
+  }
+  .hero{
+    justify-content: center;
+    align-content: center;
   }
 }
 

@@ -32,7 +32,7 @@
             >
           </li>
         </ul>
-         <ul class="sci">
+         <!-- <ul class="sci">
           <li>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
           </li>
@@ -45,7 +45,7 @@
           <li>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
           </li>
-        </ul>
+        </ul> -->
               </div>
           </div>
           <div class="contactform">
@@ -64,7 +64,7 @@
                       </div>
                   <div class="inputbox w50">
                       <input type="tel" required>
-                      <span>Phone number</span>
+                      <span>Phone</span>
                       </div>
                   <div class="inputbox w100">
                       <textarea id="textarea" required></textarea>
@@ -101,6 +101,7 @@ export default {
     list-style: none;
     text-align: left;
     line-height: 1.7rem;
+    padding: 20px 20px;
     
 }
 .localeinfo li{
@@ -200,15 +201,15 @@ height: 450px;
  textarea:focus ~ span,
  textarea:valid ~ span{
     transform: translateY(-20px);
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 1px;
+    font-weight: 100;
 }
 #send
 {
     position: relative;
     cursor: pointer;
     z-index: 100000;
-    background: #90c4f9;
+    background: blue;
     color: #fff;
     border: none;
     max-width: 150px;
@@ -223,7 +224,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: white;
+    background: #90c4f9;
 
 }
 section::before{
@@ -233,7 +234,7 @@ section::before{
     left: 0;
     width: 50%;
     height: 100vh;
-    background: #90c4f9;
+    background: white;
 
 }
 /* responsive */
